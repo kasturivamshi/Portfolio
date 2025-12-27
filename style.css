@@ -228,13 +228,13 @@ span {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding:3rem 2rem;
+  padding: 3rem 2rem;
   border-radius: 2rem;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
 }
 
-.skills-container .skills-box .brand-icons h5{
+.skills-container .skills-box .brand-icons h5 {
   font-size: 20px;
   font-weight: 600;
   padding-left: 20px;
@@ -243,8 +243,8 @@ span {
 
 .skills-container .skills-box:nth-of-type(4),
 .skills-container .skills-box:nth-of-type(5),
-    .skills-container .skills-box:nth-of-type(6){
-    height: 415px;
+.skills-container .skills-box:nth-of-type(6) {
+  height: 415px;
 }
 
 .skills-container .skills-box .brand-icons i {
@@ -257,8 +257,8 @@ span {
   margin-bottom: 20px;
 }
 
-.skills-container .skills-box:hover, 
-.skills-container .skills-box:hover .brand-icons{
+.skills-container .skills-box:hover,
+.skills-container .skills-box:hover .brand-icons {
   border-color: var(--main-text-color);
   transform: scale(1.02);
 }
@@ -278,83 +278,100 @@ span {
   margin: 1rem 0 3rem;
 }
 
-.portfolio {
+.projects {
   background: var(--second-bg-color);
 }
 
-.portfolio h2 {
+.projects h2 {
   margin-bottom: 5rem;
 }
 
-.portfolio-container {
+.projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
-  position: relative;
+.projects-container .projects-card {
+  display: flex;
+  flex-direction: column;
   border-radius: 2rem;
+  border: #0ef solid 1px;
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
-  display: flex;
+  transition: 0.3s;
 }
 
-.portfolio-box img {
+.projects-card .img-container {
+  overflow: hidden;
+  height: 200px;
+}
+
+.projects-card img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   transition: 0.5s ease;
 }
 
-.portfolio-box:hover img {
-  transform: scale(1.1);
+.projects-card:hover img {
+  transform: scale(1.2);
 }
 
-.portfolio-box .img-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-text-color));
+.projects-card:hover {
+  transform: scale(1.05);
+}
+
+.projects-card .img-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.5s ease;
+  padding: 1rem 2rem;
 }
 
-.portfolio-box:hover .img-layer {
-  transform: translateY(0);
-}
-
-.img-layer h4 {
+.projects-card .img-content h4 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.img-layer p {
-  font-size: 1.6rem;
-  margin: 0.3rem 0 1rem;
+.projects-card .img-content p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
-.img-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: var(--text-color);
-  height: 4rem;
-  width: 4rem;
+.projects-card .img-content .tech-used {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.img-layer a i {
-  font-size: 2rem;
-  columns: var(--second-bg-color);
+.projects-card .img-content .tech-used .badge {
+  font-size: 1.2rem;
+  background: #1f242d;
+  border-radius: 0.9rem;
+  padding: 0 0.9rem;
+  margin-right: 1rem;
+}
+.projects-card .img-content .links-divs {
+  display: flex;
+}
+
+.projects-card .img-content .links-divs .btn {
+  display: inline-block;
+  color: var(--main-text-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--second-bg-color);
+  border: var(--main-text-color) solid 2px;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 0.8rem;
+  transition: 0.7s ease;
+}
+
+.projects-card .img-content .links-divs .btn:hover {
   color: var(--bg-color);
+  background: var(--main-text-color);
+  box-shadow: 0 0 2rem var(--main-text-color);
 }
 
 .contact h2 {
@@ -458,23 +475,21 @@ span {
 
   .skills-container .skills-box {
     height: 470px;
-}
+  }
 
-.skills-container .skills-box .brand-icons h5 {
+  .skills-container .skills-box .brand-icons h5 {
     display: none;
-}
+  }
   .skills-container .skills-box .brand-icons i {
     font-size: 30px;
-}
-
-
+  }
 
   .portfolio {
     padding-bottom: 7rem;
   }
   .portfolio-box img {
     height: 250px;
-}
+  }
 
   .contact {
     min-height: auto;
@@ -548,11 +563,13 @@ span {
 
   .skills-container .skills-box {
     height: auto;
-}
+  }
 
-.skills-container .skills-box:nth-of-type(4), .skills-container .skills-box:nth-of-type(5), .skills-container .skills-box:nth-of-type(6) {
+  .skills-container .skills-box:nth-of-type(4),
+  .skills-container .skills-box:nth-of-type(5),
+  .skills-container .skills-box:nth-of-type(6) {
     height: auto;
-}
+  }
   .portfolio-container {
     grid-template-columns: 1fr;
   }
