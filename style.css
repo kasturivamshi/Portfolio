@@ -100,8 +100,10 @@ span {
 }
 
 .home-img img {
-  height: 40rem;
+  height: 45rem;
   margin: 3rem 3rem;
+  border: #0ef 1px solid;
+  border-radius: 2rem ;
   animation: floatImage 3s ease-in-out infinite;
 }
 
