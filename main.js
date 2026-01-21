@@ -68,3 +68,12 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
+// Dynamic Date
+
+let today = new Date();
+let Year = today.getFullYear();
+
+let spanYear = document.querySelector('#span-year');
+spanYear.innerHTML = Year;
