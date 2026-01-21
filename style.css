@@ -699,7 +699,7 @@ section {
 }
 
 .projects-card .img-content p {
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
@@ -755,7 +755,7 @@ section {
 }
 
 .about-content p {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     margin: 1.5rem 0 2rem;
 }
 
@@ -784,7 +784,7 @@ section {
 }
 
 .skills-container .skills-box .brand-icons p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
 }
 
@@ -990,9 +990,35 @@ section {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     html {
-    font-size: 50%;
+    font-size: 60%;
     overflow-x: hidden;
   }
+
+  .home-content p {
+    font-size: 1.8rem;
+}
+.about-content p {
+    font-size: 1.6rem;
+}
+
+.projects-card .img-content p {
+    font-size: 1.6rem;
+}
+
+.projects-card .img-content .tech-used .badge {
+    font-size: 1.3rem;
+  }
+
+  .projects-card .img-content .links-divs .btn {
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    font-size: 1.6rem;
+}
+
+
+
 }
