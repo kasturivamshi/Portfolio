@@ -54,9 +54,9 @@ ScrollReveal({
 }); 
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .portfolio-container, .skills-container, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .about-content p, .portfolio-container, .skills-container, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1 ', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content p ', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, ', { origin: 'right' });
 
 
 // typed js 
