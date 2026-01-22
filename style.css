@@ -162,6 +162,13 @@ span {
   box-shadow: 0 0 2rem var(--main-text-color);
 }
 
+.down-icon{
+  margin-left: 1rem;
+  margin-top: 2rem;
+  font-size: 2.3rem;
+  color: var(--main-text-color);
+}
+
 .about {
   display: flex;
   justify-content: center;
